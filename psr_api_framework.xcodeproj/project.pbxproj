@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77A78F564EFA2A638B313242 /* Pods_psr_api_framework_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEA2F0A2489B3E32743BDC /* Pods_psr_api_framework_demo.framework */; };
+		9C2610D5AAD95C75832F6378 /* Pods_psr_api_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4030C1A23B2A643245676D /* Pods_psr_api_framework.framework */; };
+		CD0BEEDF251395320058B0A6 /* psr_api_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0BEEDD251395320058B0A6 /* psr_api_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD0BEEE7251396DA0058B0A6 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEE6251396DA0058B0A6 /* Maths.swift */; };
+		CD0BEEEF251397DA0058B0A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEEE251397DA0058B0A6 /* AppDelegate.swift */; };
+		CD0BEEF1251397DA0058B0A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEF0251397DA0058B0A6 /* SceneDelegate.swift */; };
+		CD0BEEF3251397DA0058B0A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEEF2251397DA0058B0A6 /* ViewController.swift */; };
+		CD0BEEF6251397DA0058B0A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEF4251397DA0058B0A6 /* Main.storyboard */; };
+		CD0BEEF8251397E40058B0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEF7251397E40058B0A6 /* Assets.xcassets */; };
+		CD0BEEFB251397E40058B0A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEEF9251397E40058B0A6 /* LaunchScreen.storyboard */; };
+		CD0BEF012513986B0058B0A6 /* psr_api_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0BEEDA251395320058B0A6 /* psr_api_framework.framework */; };
+		CD0BEF022513986B0058B0A6 /* psr_api_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD0BEEDA251395320058B0A6 /* psr_api_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD0BEF4925139B1B0058B0A6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF0925139B1A0058B0A6 /* Colors.xcassets */; };
+		CD0BEF4A25139B1B0058B0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF0A25139B1A0058B0A6 /* Assets.xcassets */; };
+		CD0BEF4F25139B1B0058B0A6 /* IFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */; };
+		CD0BEF5025139B1B0058B0A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */; };
+		CD0BEF5125139B1B0058B0A6 /* StatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */; };
+		CD0BEF5325139B1B0058B0A6 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1725139B1A0058B0A6 /* AppConstants.swift */; };
+		CD0BEF5425139B1B0058B0A6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1825139B1A0058B0A6 /* Colors.swift */; };
+		CD0BEF5525139B1B0058B0A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF1A25139B1A0058B0A6 /* LaunchScreen.storyboard */; };
+		CD0BEF5625139B1B0058B0A6 /* PayDunyaPSR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF1C25139B1A0058B0A6 /* PayDunyaPSR.storyboard */; };
+		CD0BEF5725139B1B0058B0A6 /* MTNB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2125139B1A0058B0A6 /* MTNB.swift */; };
+		CD0BEF5825139B1B0058B0A6 /* Benin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2225139B1A0058B0A6 /* Benin.swift */; };
+		CD0BEF5925139B1B0058B0A6 /* Benin.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF2425139B1A0058B0A6 /* Benin.xib */; };
+		CD0BEF5A25139B1B0058B0A6 /* MTNB.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF2525139B1A0058B0A6 /* MTNB.xib */; };
+		CD0BEF5B25139B1B0058B0A6 /* PayDunya.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2825139B1A0058B0A6 /* PayDunya.swift */; };
+		CD0BEF5C25139B1B0058B0A6 /* OrangeMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2925139B1A0058B0A6 /* OrangeMoney.swift */; };
+		CD0BEF5D25139B1B0058B0A6 /* Visa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2A25139B1A0058B0A6 /* Visa.swift */; };
+		CD0BEF5E25139B1B0058B0A6 /* WizAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2B25139B1A0058B0A6 /* WizAll.swift */; };
+		CD0BEF5F25139B1B0058B0A6 /* Wari.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2C25139B1A0058B0A6 /* Wari.swift */; };
+		CD0BEF6025139B1B0058B0A6 /* Senegal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF2D25139B1A0058B0A6 /* Senegal.swift */; };
+		CD0BEF6125139B1B0058B0A6 /* Senegal.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF2F25139B1A0058B0A6 /* Senegal.xib */; };
+		CD0BEF6225139B1B0058B0A6 /* Visa.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3025139B1A0058B0A6 /* Visa.xib */; };
+		CD0BEF6325139B1B0058B0A6 /* Wari.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3125139B1A0058B0A6 /* Wari.xib */; };
+		CD0BEF6425139B1B0058B0A6 /* WizAll.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3225139B1A0058B0A6 /* WizAll.xib */; };
+		CD0BEF6525139B1B0058B0A6 /* OrangeMoney.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3325139B1A0058B0A6 /* OrangeMoney.xib */; };
+		CD0BEF6625139B1B0058B0A6 /* PayDunya.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3425139B1A0058B0A6 /* PayDunya.xib */; };
+		CD0BEF6725139B1B0058B0A6 /* MTNCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF3725139B1A0058B0A6 /* MTNCI.swift */; };
+		CD0BEF6825139B1B0058B0A6 /* CIvoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF3825139B1A0058B0A6 /* CIvoire.swift */; };
+		CD0BEF6925139B1B0058B0A6 /* OrangeMoneyCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF3925139B1A0058B0A6 /* OrangeMoneyCI.swift */; };
+		CD0BEF6A25139B1B0058B0A6 /* MTNCI.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3B25139B1A0058B0A6 /* MTNCI.xib */; };
+		CD0BEF6B25139B1B0058B0A6 /* CIvoire.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3C25139B1A0058B0A6 /* CIvoire.xib */; };
+		CD0BEF6C25139B1B0058B0A6 /* OrangeMoneyCI.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF3D25139B1B0058B0A6 /* OrangeMoneyCI.xib */; };
+		CD0BEF6D25139B1B0058B0A6 /* PaydunyaInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF3F25139B1B0058B0A6 /* PaydunyaInvoice.swift */; };
+		CD0BEF6E25139B1B0058B0A6 /* PaydunyaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4025139B1B0058B0A6 /* PaydunyaStore.swift */; };
+		CD0BEF6F25139B1B0058B0A6 /* WizAllMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4225139B1B0058B0A6 /* WizAllMoney.swift */; };
+		CD0BEF7025139B1B0058B0A6 /* OrangMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4325139B1B0058B0A6 /* OrangMoney.swift */; };
+		CD0BEF7125139B1B0058B0A6 /* PaydunyaSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4425139B1B0058B0A6 /* PaydunyaSetup.swift */; };
+		CD0BEF7225139B1B0058B0A6 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4625139B1B0058B0A6 /* UIButtonExtension.swift */; };
+		CD0BEF7325139B1B0058B0A6 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4725139B1B0058B0A6 /* UITextFieldExtension.swift */; };
+		CD0BEF7425139B1B0058B0A6 /* AlerteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF4825139B1B0058B0A6 /* AlerteExtension.swift */; };
+		CD99794B2513D3460000692C /* PayDunyaOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99794A2513D3460000692C /* PayDunyaOrder.swift */; };
+		CD99794D2514C3740000692C /* CheckoutInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99794C2514C3740000692C /* CheckoutInvoice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD0BEF032513986B0058B0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0BEED1251395320058B0A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD0BEED9251395320058B0A6;
+			remoteInfo = psr_api_framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD0BEF052513986B0058B0A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD0BEF022513986B0058B0A6 /* psr_api_framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27268FD322B6EB69200F308B /* Pods-psr_api_framework_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_framework_demo.debug.xcconfig"; path = "Target Support Files/Pods-psr_api_framework_demo/Pods-psr_api_framework_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D912EFD4631A40B2075BF88 /* Pods-psr_api_framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_framework.debug.xcconfig"; path = "Target Support Files/Pods-psr_api_framework/Pods-psr_api_framework.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9BF695813C7707EC4C2A21 /* Pods-psr_api_framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_framework.release.xcconfig"; path = "Target Support Files/Pods-psr_api_framework/Pods-psr_api_framework.release.xcconfig"; sourceTree = "<group>"; };
+		66FEA2F0A2489B3E32743BDC /* Pods_psr_api_framework_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_framework_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4030C1A23B2A643245676D /* Pods_psr_api_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0BEEDA251395320058B0A6 /* psr_api_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = psr_api_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0BEEDD251395320058B0A6 /* psr_api_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = psr_api_framework.h; sourceTree = "<group>"; };
+		CD0BEEDE251395320058B0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0BEEE6251396DA0058B0A6 /* Maths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maths.swift; sourceTree = "<group>"; };
+		CD0BEEEC251397DA0058B0A6 /* psr_api_framework_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psr_api_framework_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0BEEEE251397DA0058B0A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD0BEEF0251397DA0058B0A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD0BEEF2251397DA0058B0A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD0BEEF5251397DA0058B0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD0BEEF7251397E40058B0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD0BEEFA251397E40058B0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD0BEEFC251397E40058B0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0BEF0925139B1A0058B0A6 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Colors.xcassets; sourceTree = "<group>"; };
+		CD0BEF0A25139B1A0058B0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFrameViewController.swift; sourceTree = "<group>"; };
+		CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatePickerViewController.swift; sourceTree = "<group>"; };
+		CD0BEF1725139B1A0058B0A6 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		CD0BEF1825139B1A0058B0A6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CD0BEF1B25139B1A0058B0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD0BEF1D25139B1A0058B0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PayDunyaPSR.storyboard; sourceTree = "<group>"; };
+		CD0BEF2125139B1A0058B0A6 /* MTNB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNB.swift; sourceTree = "<group>"; };
+		CD0BEF2225139B1A0058B0A6 /* Benin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benin.swift; sourceTree = "<group>"; };
+		CD0BEF2425139B1A0058B0A6 /* Benin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Benin.xib; sourceTree = "<group>"; };
+		CD0BEF2525139B1A0058B0A6 /* MTNB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTNB.xib; sourceTree = "<group>"; };
+		CD0BEF2825139B1A0058B0A6 /* PayDunya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayDunya.swift; sourceTree = "<group>"; };
+		CD0BEF2925139B1A0058B0A6 /* OrangeMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeMoney.swift; sourceTree = "<group>"; };
+		CD0BEF2A25139B1A0058B0A6 /* Visa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visa.swift; sourceTree = "<group>"; };
+		CD0BEF2B25139B1A0058B0A6 /* WizAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizAll.swift; sourceTree = "<group>"; };
+		CD0BEF2C25139B1A0058B0A6 /* Wari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wari.swift; sourceTree = "<group>"; };
+		CD0BEF2D25139B1A0058B0A6 /* Senegal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Senegal.swift; sourceTree = "<group>"; };
+		CD0BEF2F25139B1A0058B0A6 /* Senegal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Senegal.xib; sourceTree = "<group>"; };
+		CD0BEF3025139B1A0058B0A6 /* Visa.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Visa.xib; sourceTree = "<group>"; };
+		CD0BEF3125139B1A0058B0A6 /* Wari.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Wari.xib; sourceTree = "<group>"; };
+		CD0BEF3225139B1A0058B0A6 /* WizAll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WizAll.xib; sourceTree = "<group>"; };
+		CD0BEF3325139B1A0058B0A6 /* OrangeMoney.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrangeMoney.xib; sourceTree = "<group>"; };
+		CD0BEF3425139B1A0058B0A6 /* PayDunya.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayDunya.xib; sourceTree = "<group>"; };
+		CD0BEF3725139B1A0058B0A6 /* MTNCI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNCI.swift; sourceTree = "<group>"; };
+		CD0BEF3825139B1A0058B0A6 /* CIvoire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIvoire.swift; sourceTree = "<group>"; };
+		CD0BEF3925139B1A0058B0A6 /* OrangeMoneyCI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeMoneyCI.swift; sourceTree = "<group>"; };
+		CD0BEF3B25139B1A0058B0A6 /* MTNCI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTNCI.xib; sourceTree = "<group>"; };
+		CD0BEF3C25139B1A0058B0A6 /* CIvoire.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIvoire.xib; sourceTree = "<group>"; };
+		CD0BEF3D25139B1B0058B0A6 /* OrangeMoneyCI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrangeMoneyCI.xib; sourceTree = "<group>"; };
+		CD0BEF3F25139B1B0058B0A6 /* PaydunyaInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaydunyaInvoice.swift; sourceTree = "<group>"; };
+		CD0BEF4025139B1B0058B0A6 /* PaydunyaStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaydunyaStore.swift; sourceTree = "<group>"; };
+		CD0BEF4225139B1B0058B0A6 /* WizAllMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizAllMoney.swift; sourceTree = "<group>"; };
+		CD0BEF4325139B1B0058B0A6 /* OrangMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangMoney.swift; sourceTree = "<group>"; };
+		CD0BEF4425139B1B0058B0A6 /* PaydunyaSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaydunyaSetup.swift; sourceTree = "<group>"; };
+		CD0BEF4625139B1B0058B0A6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CD0BEF4725139B1B0058B0A6 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		CD0BEF4825139B1B0058B0A6 /* AlerteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlerteExtension.swift; sourceTree = "<group>"; };
+		CD99794A2513D3460000692C /* PayDunyaOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDunyaOrder.swift; sourceTree = "<group>"; };
+		CD99794C2514C3740000692C /* CheckoutInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutInvoice.swift; sourceTree = "<group>"; };
+		F52B05E9E5A35F0AB62A2DB9 /* Pods-psr_api_framework_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_framework_demo.release.xcconfig"; path = "Target Support Files/Pods-psr_api_framework_demo/Pods-psr_api_framework_demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0BEED7251395320058B0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2610D5AAD95C75832F6378 /* Pods_psr_api_framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0BEEE9251397DA0058B0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEF012513986B0058B0A6 /* psr_api_framework.framework in Frameworks */,
+				77A78F564EFA2A638B313242 /* Pods_psr_api_framework_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FEF0418B40C966CF3B06889 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D912EFD4631A40B2075BF88 /* Pods-psr_api_framework.debug.xcconfig */,
+				5A9BF695813C7707EC4C2A21 /* Pods-psr_api_framework.release.xcconfig */,
+				27268FD322B6EB69200F308B /* Pods-psr_api_framework_demo.debug.xcconfig */,
+				F52B05E9E5A35F0AB62A2DB9 /* Pods-psr_api_framework_demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD0BEED0251395320058B0A6 = {
+			isa = PBXGroup;
+			children = (
+				CD0BEEDC251395320058B0A6 /* psr_api_framework */,
+				CD0BEEED251397DA0058B0A6 /* psr_api_framework_demo */,
+				CD0BEEDB251395320058B0A6 /* Products */,
+				CD0BEF002513986B0058B0A6 /* Frameworks */,
+				9FEF0418B40C966CF3B06889 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CD0BEEDB251395320058B0A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEEDA251395320058B0A6 /* psr_api_framework.framework */,
+				CD0BEEEC251397DA0058B0A6 /* psr_api_framework_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD0BEEDC251395320058B0A6 /* psr_api_framework */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEEE5251396B60058B0A6 /* Sources */,
+				CD0BEEDD251395320058B0A6 /* psr_api_framework.h */,
+				CD0BEEDE251395320058B0A6 /* Info.plist */,
+			);
+			path = psr_api_framework;
+			sourceTree = "<group>";
+		};
+		CD0BEEE5251396B60058B0A6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF1025139B1A0058B0A6 /* Controller */,
+				CD0BEF4525139B1B0058B0A6 /* Extensions */,
+				CD0BEF0825139B1A0058B0A6 /* Files */,
+				CD0BEF3E25139B1B0058B0A6 /* Model */,
+				CD0BEF1525139B1A0058B0A6 /* Tools */,
+				CD0BEF1925139B1A0058B0A6 /* View */,
+				CD0BEEE6251396DA0058B0A6 /* Maths.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CD0BEEED251397DA0058B0A6 /* psr_api_framework_demo */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEEEE251397DA0058B0A6 /* AppDelegate.swift */,
+				CD0BEEF0251397DA0058B0A6 /* SceneDelegate.swift */,
+				CD0BEEF2251397DA0058B0A6 /* ViewController.swift */,
+				CD0BEEF4251397DA0058B0A6 /* Main.storyboard */,
+				CD0BEEF7251397E40058B0A6 /* Assets.xcassets */,
+				CD0BEEF9251397E40058B0A6 /* LaunchScreen.storyboard */,
+				CD0BEEFC251397E40058B0A6 /* Info.plist */,
+			);
+			path = psr_api_framework_demo;
+			sourceTree = "<group>";
+		};
+		CD0BEF002513986B0058B0A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F4030C1A23B2A643245676D /* Pods_psr_api_framework.framework */,
+				66FEA2F0A2489B3E32743BDC /* Pods_psr_api_framework_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0BEF0825139B1A0058B0A6 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF0925139B1A0058B0A6 /* Colors.xcassets */,
+				CD0BEF0A25139B1A0058B0A6 /* Assets.xcassets */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		CD0BEF1025139B1A0058B0A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */,
+				CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */,
+				CD0BEF1325139B1A0058B0A6 /* Senegal */,
+				CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD0BEF1325139B1A0058B0A6 /* Senegal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Senegal;
+			sourceTree = "<group>";
+		};
+		CD0BEF1525139B1A0058B0A6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF1725139B1A0058B0A6 /* AppConstants.swift */,
+				CD0BEF1825139B1A0058B0A6 /* Colors.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CD0BEF1925139B1A0058B0A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF1A25139B1A0058B0A6 /* LaunchScreen.storyboard */,
+				CD0BEF1C25139B1A0058B0A6 /* PayDunyaPSR.storyboard */,
+				CD0BEF1E25139B1A0058B0A6 /* Files */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0BEF1E25139B1A0058B0A6 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF1F25139B1A0058B0A6 /* Benin */,
+				CD0BEF2625139B1A0058B0A6 /* Senegal */,
+				CD0BEF3525139B1A0058B0A6 /* CodeDIvoire */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		CD0BEF1F25139B1A0058B0A6 /* Benin */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2025139B1A0058B0A6 /* Controller */,
+				CD0BEF2325139B1A0058B0A6 /* View */,
+			);
+			path = Benin;
+			sourceTree = "<group>";
+		};
+		CD0BEF2025139B1A0058B0A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2125139B1A0058B0A6 /* MTNB.swift */,
+				CD0BEF2225139B1A0058B0A6 /* Benin.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD0BEF2325139B1A0058B0A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2425139B1A0058B0A6 /* Benin.xib */,
+				CD0BEF2525139B1A0058B0A6 /* MTNB.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0BEF2625139B1A0058B0A6 /* Senegal */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2725139B1A0058B0A6 /* Controller */,
+				CD0BEF2E25139B1A0058B0A6 /* View */,
+			);
+			path = Senegal;
+			sourceTree = "<group>";
+		};
+		CD0BEF2725139B1A0058B0A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2825139B1A0058B0A6 /* PayDunya.swift */,
+				CD0BEF2925139B1A0058B0A6 /* OrangeMoney.swift */,
+				CD0BEF2A25139B1A0058B0A6 /* Visa.swift */,
+				CD0BEF2B25139B1A0058B0A6 /* WizAll.swift */,
+				CD0BEF2C25139B1A0058B0A6 /* Wari.swift */,
+				CD0BEF2D25139B1A0058B0A6 /* Senegal.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD0BEF2E25139B1A0058B0A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF2F25139B1A0058B0A6 /* Senegal.xib */,
+				CD0BEF3025139B1A0058B0A6 /* Visa.xib */,
+				CD0BEF3125139B1A0058B0A6 /* Wari.xib */,
+				CD0BEF3225139B1A0058B0A6 /* WizAll.xib */,
+				CD0BEF3325139B1A0058B0A6 /* OrangeMoney.xib */,
+				CD0BEF3425139B1A0058B0A6 /* PayDunya.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0BEF3525139B1A0058B0A6 /* CodeDIvoire */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF3625139B1A0058B0A6 /* Controller */,
+				CD0BEF3A25139B1A0058B0A6 /* View */,
+			);
+			path = CodeDIvoire;
+			sourceTree = "<group>";
+		};
+		CD0BEF3625139B1A0058B0A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF3725139B1A0058B0A6 /* MTNCI.swift */,
+				CD0BEF3825139B1A0058B0A6 /* CIvoire.swift */,
+				CD0BEF3925139B1A0058B0A6 /* OrangeMoneyCI.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD0BEF3A25139B1A0058B0A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF3B25139B1A0058B0A6 /* MTNCI.xib */,
+				CD0BEF3C25139B1A0058B0A6 /* CIvoire.xib */,
+				CD0BEF3D25139B1B0058B0A6 /* OrangeMoneyCI.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0BEF3E25139B1B0058B0A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD99794A2513D3460000692C /* PayDunyaOrder.swift */,
+				CD0BEF3F25139B1B0058B0A6 /* PaydunyaInvoice.swift */,
+				CD0BEF4025139B1B0058B0A6 /* PaydunyaStore.swift */,
+				CD0BEF4425139B1B0058B0A6 /* PaydunyaSetup.swift */,
+				CD0BEF4125139B1B0058B0A6 /* Senegal */,
+				CD99794C2514C3740000692C /* CheckoutInvoice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD0BEF4125139B1B0058B0A6 /* Senegal */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF4225139B1B0058B0A6 /* WizAllMoney.swift */,
+				CD0BEF4325139B1B0058B0A6 /* OrangMoney.swift */,
+			);
+			path = Senegal;
+			sourceTree = "<group>";
+		};
+		CD0BEF4525139B1B0058B0A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BEF4625139B1B0058B0A6 /* UIButtonExtension.swift */,
+				CD0BEF4725139B1B0058B0A6 /* UITextFieldExtension.swift */,
+				CD0BEF4825139B1B0058B0A6 /* AlerteExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD0BEED5251395320058B0A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEEDF251395320058B0A6 /* psr_api_framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD0BEED9251395320058B0A6 /* psr_api_framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0BEEE2251395320058B0A6 /* Build configuration list for PBXNativeTarget "psr_api_framework" */;
+			buildPhases = (
+				033C6F74242B5A12995B94D0 /* [CP] Check Pods Manifest.lock */,
+				CD0BEED5251395320058B0A6 /* Headers */,
+				CD0BEED6251395320058B0A6 /* Sources */,
+				CD0BEED7251395320058B0A6 /* Frameworks */,
+				CD0BEED8251395320058B0A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = psr_api_framework;
+			productName = psr_api_framework;
+			productReference = CD0BEEDA251395320058B0A6 /* psr_api_framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD0BEEEB251397DA0058B0A6 /* psr_api_framework_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0BEEFD251397E40058B0A6 /* Build configuration list for PBXNativeTarget "psr_api_framework_demo" */;
+			buildPhases = (
+				BEFE9B4C28AD8B3567664ECE /* [CP] Check Pods Manifest.lock */,
+				CD0BEEE8251397DA0058B0A6 /* Sources */,
+				CD0BEEE9251397DA0058B0A6 /* Frameworks */,
+				CD0BEEEA251397DA0058B0A6 /* Resources */,
+				CD0BEF052513986B0058B0A6 /* Embed Frameworks */,
+				C1036045F213E8BB0564C9D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0BEF042513986B0058B0A6 /* PBXTargetDependency */,
+			);
+			name = psr_api_framework_demo;
+			productName = psr_api_framework_demo;
+			productReference = CD0BEEEC251397DA0058B0A6 /* psr_api_framework_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0BEED1251395320058B0A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = PayDunya;
+				TargetAttributes = {
+					CD0BEED9251395320058B0A6 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+					CD0BEEEB251397DA0058B0A6 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = CD0BEED4251395320058B0A6 /* Build configuration list for PBXProject "psr_api_framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD0BEED0251395320058B0A6;
+			productRefGroup = CD0BEEDB251395320058B0A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0BEED9251395320058B0A6 /* psr_api_framework */,
+				CD0BEEEB251397DA0058B0A6 /* psr_api_framework_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0BEED8251395320058B0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEF4A25139B1B0058B0A6 /* Assets.xcassets in Resources */,
+				CD0BEF6B25139B1B0058B0A6 /* CIvoire.xib in Resources */,
+				CD0BEF6C25139B1B0058B0A6 /* OrangeMoneyCI.xib in Resources */,
+				CD0BEF5A25139B1B0058B0A6 /* MTNB.xib in Resources */,
+				CD0BEF5625139B1B0058B0A6 /* PayDunyaPSR.storyboard in Resources */,
+				CD0BEF6125139B1B0058B0A6 /* Senegal.xib in Resources */,
+				CD0BEF6225139B1B0058B0A6 /* Visa.xib in Resources */,
+				CD0BEF5525139B1B0058B0A6 /* LaunchScreen.storyboard in Resources */,
+				CD0BEF6325139B1B0058B0A6 /* Wari.xib in Resources */,
+				CD0BEF6425139B1B0058B0A6 /* WizAll.xib in Resources */,
+				CD0BEF6525139B1B0058B0A6 /* OrangeMoney.xib in Resources */,
+				CD0BEF4925139B1B0058B0A6 /* Colors.xcassets in Resources */,
+				CD0BEF6625139B1B0058B0A6 /* PayDunya.xib in Resources */,
+				CD0BEF5925139B1B0058B0A6 /* Benin.xib in Resources */,
+				CD0BEF6A25139B1B0058B0A6 /* MTNCI.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0BEEEA251397DA0058B0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEEFB251397E40058B0A6 /* LaunchScreen.storyboard in Resources */,
+				CD0BEEF8251397E40058B0A6 /* Assets.xcassets in Resources */,
+				CD0BEEF6251397DA0058B0A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033C6F74242B5A12995B94D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-psr_api_framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFE9B4C28AD8B3567664ECE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-psr_api_framework_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1036045F213E8BB0564C9D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-psr_api_framework_demo/Pods-psr_api_framework_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-psr_api_framework_demo/Pods-psr_api_framework_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-psr_api_framework_demo/Pods-psr_api_framework_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0BEED6251395320058B0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEF4F25139B1B0058B0A6 /* IFrameViewController.swift in Sources */,
+				CD0BEF7425139B1B0058B0A6 /* AlerteExtension.swift in Sources */,
+				CD0BEF6825139B1B0058B0A6 /* CIvoire.swift in Sources */,
+				CD0BEF5D25139B1B0058B0A6 /* Visa.swift in Sources */,
+				CD0BEF5425139B1B0058B0A6 /* Colors.swift in Sources */,
+				CD0BEF5825139B1B0058B0A6 /* Benin.swift in Sources */,
+				CD0BEF5325139B1B0058B0A6 /* AppConstants.swift in Sources */,
+				CD0BEF6D25139B1B0058B0A6 /* PaydunyaInvoice.swift in Sources */,
+				CD0BEF6725139B1B0058B0A6 /* MTNCI.swift in Sources */,
+				CD0BEF7325139B1B0058B0A6 /* UITextFieldExtension.swift in Sources */,
+				CD0BEF6025139B1B0058B0A6 /* Senegal.swift in Sources */,
+				CD0BEF5025139B1B0058B0A6 /* MainViewController.swift in Sources */,
+				CD0BEF5125139B1B0058B0A6 /* StatePickerViewController.swift in Sources */,
+				CD0BEEE7251396DA0058B0A6 /* Maths.swift in Sources */,
+				CD99794B2513D3460000692C /* PayDunyaOrder.swift in Sources */,
+				CD0BEF6E25139B1B0058B0A6 /* PaydunyaStore.swift in Sources */,
+				CD0BEF5E25139B1B0058B0A6 /* WizAll.swift in Sources */,
+				CD0BEF5725139B1B0058B0A6 /* MTNB.swift in Sources */,
+				CD0BEF5F25139B1B0058B0A6 /* Wari.swift in Sources */,
+				CD0BEF5C25139B1B0058B0A6 /* OrangeMoney.swift in Sources */,
+				CD0BEF5B25139B1B0058B0A6 /* PayDunya.swift in Sources */,
+				CD0BEF7125139B1B0058B0A6 /* PaydunyaSetup.swift in Sources */,
+				CD0BEF6925139B1B0058B0A6 /* OrangeMoneyCI.swift in Sources */,
+				CD0BEF7225139B1B0058B0A6 /* UIButtonExtension.swift in Sources */,
+				CD0BEF6F25139B1B0058B0A6 /* WizAllMoney.swift in Sources */,
+				CD0BEF7025139B1B0058B0A6 /* OrangMoney.swift in Sources */,
+				CD99794D2514C3740000692C /* CheckoutInvoice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0BEEE8251397DA0058B0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0BEEF3251397DA0058B0A6 /* ViewController.swift in Sources */,
+				CD0BEEEF251397DA0058B0A6 /* AppDelegate.swift in Sources */,
+				CD0BEEF1251397DA0058B0A6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD0BEF042513986B0058B0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD0BEED9251395320058B0A6 /* psr_api_framework */;
+			targetProxy = CD0BEF032513986B0058B0A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD0BEEF4251397DA0058B0A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0BEEF5251397DA0058B0A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD0BEEF9251397E40058B0A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0BEEFA251397E40058B0A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD0BEF1A25139B1A0058B0A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0BEF1B25139B1A0058B0A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD0BEF1C25139B1A0058B0A6 /* PayDunyaPSR.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0BEF1D25139B1A0058B0A6 /* Base */,
+			);
+			name = PayDunyaPSR.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD0BEEE0251395320058B0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD0BEEE1251395320058B0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD0BEEE3251395320058B0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D912EFD4631A40B2075BF88 /* Pods-psr_api_framework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = psr_api_framework/Sources/Files/Colors.xcassets;
+				DEVELOPMENT_TEAM = B39YW5999K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = psr_api_framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paydunya.psr-api-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD0BEEE4251395320058B0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9BF695813C7707EC4C2A21 /* Pods-psr_api_framework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = psr_api_framework/Sources/Files/Colors.xcassets;
+				DEVELOPMENT_TEAM = B39YW5999K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = psr_api_framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paydunya.psr-api-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD0BEEFE251397E40058B0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27268FD322B6EB69200F308B /* Pods-psr_api_framework_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = B39YW5999K;
+				INFOPLIST_FILE = psr_api_framework_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paydunya.psr-api-framework-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD0BEEFF251397E40058B0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52B05E9E5A35F0AB62A2DB9 /* Pods-psr_api_framework_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = B39YW5999K;
+				INFOPLIST_FILE = psr_api_framework_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paydunya.psr-api-framework-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0BEED4251395320058B0A6 /* Build configuration list for PBXProject "psr_api_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0BEEE0251395320058B0A6 /* Debug */,
+				CD0BEEE1251395320058B0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0BEEE2251395320058B0A6 /* Build configuration list for PBXNativeTarget "psr_api_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0BEEE3251395320058B0A6 /* Debug */,
+				CD0BEEE4251395320058B0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0BEEFD251397E40058B0A6 /* Build configuration list for PBXNativeTarget "psr_api_framework_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0BEEFE251397E40058B0A6 /* Debug */,
+				CD0BEEFF251397E40058B0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0BEED1251395320058B0A6 /* Project object */;
+}

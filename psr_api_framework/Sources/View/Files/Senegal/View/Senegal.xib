@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Senegal" customModule="psr_api_framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0ia-dH-Obq">
+                    <rect key="frame" x="8" y="20" width="282" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-al-2UP" customClass="addRoundingButton" customModule="psr_api_framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="LRH-fy-S6f"/>
+                                <constraint firstAttribute="height" constant="50" id="zR3-8m-gIK"/>
+                            </constraints>
+                            <state key="normal" image="paydunya-logo-mobile"/>
+                            <connections>
+                                <action selector="paydunyaButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="mMH-uS-Tg6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rj8-lg-tWg" customClass="addRoundingButton" customModule="psr_api_framework" customModuleProvider="target">
+                            <rect key="frame" x="58" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="2B2-mf-Iq1"/>
+                                <constraint firstAttribute="width" constant="50" id="nKf-sO-glJ"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="MasterCard"/>
+                            <connections>
+                                <action selector="cartButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="WTA-hR-Dpe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-lK-oyq" customClass="addRoundingButton" customModule="psr_api_framework" customModuleProvider="target">
+                            <rect key="frame" x="116" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="m4k-n7-FwN"/>
+                                <constraint firstAttribute="height" constant="50" id="ypc-Jw-3tC"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="OrangeMoney"/>
+                            <connections>
+                                <action selector="omoneyButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="2rc-1u-bxO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8L-nH-bN3" customClass="addRoundingButton" customModule="psr_api_framework" customModuleProvider="target">
+                            <rect key="frame" x="174" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="35d-3x-reV"/>
+                                <constraint firstAttribute="height" constant="50" id="yT5-e4-x6O"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Wari"/>
+                            <connections>
+                                <action selector="wariButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="jsn-Xl-Nv4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoN-Vq-YM8" customClass="addRoundingButton" customModule="psr_api_framework" customModuleProvider="target">
+                            <rect key="frame" x="232" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4e2-K4-RS2"/>
+                                <constraint firstAttribute="height" constant="50" id="P7j-yj-kGQ"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Wizall"/>
+                            <connections>
+                                <action selector="wariButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="lK4-MY-4pa"/>
+                                <action selector="wizallButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Khl-TT-U05"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="282" id="UZ6-GG-qG3"/>
+                        <constraint firstAttribute="height" constant="50" id="yXE-l0-bhK"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0ia-dH-Obq" secondAttribute="trailing" constant="30" id="2Bp-CM-crQ"/>
+                <constraint firstItem="0ia-dH-Obq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Qwn-em-WQh"/>
+                <constraint firstItem="0ia-dH-Obq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="ike-ep-lv0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0ia-dH-Obq" secondAttribute="bottom" constant="498" id="ysl-IO-wu2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="omoneyButton" destination="eJq-lK-oyq" id="xtk-Hz-kN8"/>
+                <outlet property="paydunyaButton" destination="qbo-al-2UP" id="25o-hF-1Oy"/>
+                <outlet property="stackView" destination="0ia-dH-Obq" id="IOC-2t-22v"/>
+                <outlet property="visaButton" destination="Rj8-lg-tWg" id="qyP-bK-u5O"/>
+                <outlet property="wariButton" destination="S8L-nH-bN3" id="Igp-5P-1ZM"/>
+                <outlet property="wizallButton" destination="MoN-Vq-YM8" id="GtB-7Q-IoF"/>
+            </connections>
+            <point key="canvasLocation" x="138.75" y="110.91549295774648"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MasterCard" width="198" height="198"/>
+        <image name="OrangeMoney" width="198" height="198"/>
+        <image name="Wari" width="192" height="192"/>
+        <image name="Wizall" width="192" height="192"/>
+        <image name="paydunya-logo-mobile" width="55" height="55"/>
+    </resources>
+</document>

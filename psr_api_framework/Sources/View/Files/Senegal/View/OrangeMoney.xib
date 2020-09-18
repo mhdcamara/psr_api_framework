@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrangeMoney" customModule="psr_api" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-b3-vcZ">
+                    <rect key="frame" x="34" y="146" width="251" height="146"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="S1k-fd-Ztf">
+                            <rect key="frame" x="0.0" y="0.0" width="251" height="79"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ou N° Téléphone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20L-B9-kR1" customClass="MDCOutlinedTextField" customModule="psr_api" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="251" height="30"/>
+                                    <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="AWI-bz-fHF"/>
+                                        <constraint firstAttribute="width" constant="251" id="w5L-8M-nGJ"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code d'autorisation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7I-YZ-1Nv" customClass="MDCOutlinedTextField" customModule="psr_api" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="49" width="251" height="30"/>
+                                    <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="251" id="eMY-v3-jWy"/>
+                                        <constraint firstAttribute="height" constant="30" id="fuX-Wp-bhu"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="251" id="1kY-oF-EsC"/>
+                                <constraint firstAttribute="height" constant="79" id="MHY-MI-IuW"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxo-Tp-wvI">
+                            <rect key="frame" x="0.0" y="114" width="251" height="32"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.43921568630000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="K9x-pe-E0I"/>
+                                <constraint firstAttribute="width" constant="251" id="wS6-x6-QEc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="  PAYER MAINTENANT" image="checkmark.circle.fill" catalog="system"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="payWithPayDunyaButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ejP-Yg-PGH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="146" id="AgP-EH-mwr"/>
+                        <constraint firstAttribute="width" constant="251" id="B0t-OC-4rz"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QxO-NL-dgb">
+                    <rect key="frame" x="38" y="363" width="245" height="22"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-02-cL3">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="187" id="4Gg-vf-vxq"/>
+                                <constraint firstAttribute="height" constant="22" id="UQ6-oo-ohL"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="La transaction est sécurisée par ">
+                                    <attributes>
+                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="12" name="Avenir-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="©">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0039215686269999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="12" name="Avenir-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyL-um-o42">
+                            <rect key="frame" x="190" y="0.0" width="55" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="nhb-PO-8br"/>
+                                <constraint firstAttribute="width" constant="55" id="x4b-5H-Yh7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                            <state key="normal" title="PayDunya">
+                                <color key="titleColor" red="0.0039215686269999999" green="0.43921568630000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="Scv-7c-qkx"/>
+                        <constraint firstAttribute="height" constant="22" id="aKS-W5-F4H"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="QqY-WT-9T3">
+                    <rect key="frame" x="34" y="16" width="253" height="99"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Br-5D-Ad4">
+                            <rect key="frame" x="0.0" y="0.0" width="253" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-o2-Pl4">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="LIR-cM-vlL"/>
+                                        <constraint firstAttribute="height" constant="21" id="cWB-vz-r9e"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mamadou Gaye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ook-xu-rEK">
+                                    <rect key="frame" x="53" y="0.0" width="200" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="Kq6-Rl-akX"/>
+                                        <constraint firstAttribute="height" constant="21" id="S9i-ZQ-BTL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="0Ox-Dh-Ls9"/>
+                                <constraint firstAttribute="width" constant="253" id="nCF-Fn-je0"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kjv-2m-cA0">
+                            <rect key="frame" x="0.0" y="39" width="253" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cH-ni-Cki">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="9hl-10-zfl"/>
+                                        <constraint firstAttribute="height" constant="21" id="rbl-Ut-YlC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mamadou.gaye@paydunya.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMK-xp-mJE">
+                                    <rect key="frame" x="53" y="0.0" width="200" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="EyM-c2-aNo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="1Uf-ks-xtp"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wvI-Q7-gg2">
+                            <rect key="frame" x="0.0" y="78" width="253" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montant total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pii-mV-4af">
+                                    <rect key="frame" x="0.0" y="0.0" width="95" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="NAG-lV-pBe"/>
+                                        <constraint firstAttribute="width" constant="95" id="vhs-Oh-j2e"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200000 FCFA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U75-gm-fBU">
+                                    <rect key="frame" x="103" y="0.0" width="150" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="m6k-3k-Tw3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="DOu-tg-MOB"/>
+                                <constraint firstAttribute="width" constant="253" id="pBq-iE-Ksh"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="253" id="tnN-FO-okO"/>
+                        <constraint firstAttribute="height" constant="99" id="u1I-YW-ZVi"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QxO-NL-dgb" secondAttribute="trailing" constant="37" id="A2Y-FW-Ghh"/>
+                <constraint firstItem="QqY-WT-9T3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="Aq0-SG-vvB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QTn-b3-vcZ" secondAttribute="trailing" constant="35" id="Fq7-b1-t2i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QqY-WT-9T3" secondAttribute="trailing" constant="33" id="Huh-1t-q0v"/>
+                <constraint firstItem="QxO-NL-dgb" firstAttribute="top" secondItem="QTn-b3-vcZ" secondAttribute="bottom" constant="71" id="Ldv-Pa-Vd6"/>
+                <constraint firstItem="QTn-b3-vcZ" firstAttribute="top" secondItem="QqY-WT-9T3" secondAttribute="bottom" constant="31" id="P4P-lX-ik7"/>
+                <constraint firstItem="QqY-WT-9T3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="aH2-BD-aio"/>
+                <constraint firstItem="QxO-NL-dgb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="38" id="hLn-3p-O4h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QxO-NL-dgb" secondAttribute="bottom" constant="15" id="ikR-Og-Bsd"/>
+                <constraint firstItem="QTn-b3-vcZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="pRu-Lf-Y35"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="amountLabel" destination="U75-gm-fBU" id="2X4-sL-ZT5"/>
+                <outlet property="codeTextField" destination="c7I-YZ-1Nv" id="Xgi-lj-9ks"/>
+                <outlet property="emailLabel" destination="WMK-xp-mJE" id="bdW-VA-Sra"/>
+                <outlet property="fullNameLabel" destination="ook-xu-rEK" id="mRF-Bu-RL2"/>
+                <outlet property="telTextField" destination="20L-B9-kR1" id="2bG-Dy-Fi4"/>
+            </connections>
+            <point key="canvasLocation" x="93" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

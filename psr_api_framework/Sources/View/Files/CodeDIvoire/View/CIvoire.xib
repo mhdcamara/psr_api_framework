@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CIvoire" customModule="psr_api" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YDA-y3-U3b">
+                    <rect key="frame" x="9" y="20" width="205" height="62"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYd-YV-MAN" customClass="addRoundingButton" customModule="psr_api" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="62" id="7NM-iX-OEd"/>
+                                <constraint firstAttribute="width" constant="63" id="UP2-Xc-6dP"/>
+                            </constraints>
+                            <state key="normal" image="card-logo-mobile"/>
+                            <connections>
+                                <action selector="cartButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dpi-EW-MXy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-dx-BBP" customClass="addRoundingButton" customModule="psr_api" customModuleProvider="target">
+                            <rect key="frame" x="71" y="0.0" width="63" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="63" id="Vj2-uP-avz"/>
+                                <constraint firstAttribute="height" constant="62" id="s9g-RO-jT9"/>
+                            </constraints>
+                            <state key="normal" image="orange-money-ci-logo-mobile"/>
+                            <connections>
+                                <action selector="omoneyButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Sy2-Cw-BMX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFr-Dt-99s" customClass="addRoundingButton" customModule="psr_api" customModuleProvider="target">
+                            <rect key="frame" x="142" y="0.0" width="63" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="62" id="7C7-62-he9"/>
+                                <constraint firstAttribute="width" constant="63" id="SWV-OF-gbm"/>
+                            </constraints>
+                            <state key="normal" image="mtn-logo-mobile"/>
+                            <connections>
+                                <action selector="mtnButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="kxd-hV-t9T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="6ng-X3-toy"/>
+                        <constraint firstAttribute="width" constant="205" id="98l-Sx-yA4"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="YDA-y3-U3b" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="70w-lV-VXV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YDA-y3-U3b" secondAttribute="trailing" constant="106" id="cqU-BF-w4q"/>
+                <constraint firstItem="YDA-y3-U3b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="pKT-kf-RBZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YDA-y3-U3b" secondAttribute="bottom" constant="486" id="z1V-FP-rNs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="mtnButton" destination="ZFr-Dt-99s" id="MJl-Yi-pwg"/>
+                <outlet property="omoneyButton" destination="WaY-dx-BBP" id="NOm-KS-RZ5"/>
+                <outlet property="stackView" destination="YDA-y3-U3b" id="Xbv-I3-Jdh"/>
+                <outlet property="visaButton" destination="dYd-YV-MAN" id="qpq-vQ-Eva"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card-logo-mobile" width="55" height="55"/>
+        <image name="mtn-logo-mobile" width="55" height="55"/>
+        <image name="orange-money-ci-logo-mobile" width="55" height="55"/>
+    </resources>
+</document>
