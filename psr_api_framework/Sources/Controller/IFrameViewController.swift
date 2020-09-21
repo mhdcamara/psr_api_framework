@@ -54,7 +54,9 @@ public class IFrameViewController: UIViewController, EasyTipViewDelegate
     
     static public func instantiate() -> IFrameViewController?
     {
-        return UIStoryboard(name: "PayDunyaPSR", bundle: nil).instantiateViewController(withIdentifier: "\(IFrameViewController.self)") as? IFrameViewController
+        let frameworkBundle = Bundle(identifier: "com.paydunya.psr-api-framework")
+                
+        return UIStoryboard(name: "PayDunyaPSR", bundle: frameworkBundle).instantiateViewController(withIdentifier: "\(IFrameViewController.self)") as? IFrameViewController
     }
     
     //MARK: Outlets
@@ -129,6 +131,20 @@ public class IFrameViewController: UIViewController, EasyTipViewDelegate
             senegal.frame.origin = CGPoint(x: 20, y: 100)
             self.view.addSubview(senegal)
         }
+    }
+    
+    static public func showCustomIFrame(vcontroller: UIViewController)
+    {
+        let VC = IFrameViewController.instantiate()
+        
+        guard let pickerVC = VC else { return }
+        let popupVC = PopupViewController(contentController: pickerVC, position: .top(50), popupWidth: vcontroller.view.frame.width - 20, popupHeight: vcontroller.view.frame.height - 70)
+        popupVC.backgroundAlpha = 0.3
+        popupVC.backgroundColor = .black
+        popupVC.canTapOutsideToDismiss = true
+        popupVC.cornerRadius = 10
+        popupVC.shadowEnabled = true
+        vcontroller.present(popupVC, animated: true, completion: nil)
     }
 
 }
