@@ -22,7 +22,6 @@
 		CD0BEF4925139B1B0058B0A6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF0925139B1A0058B0A6 /* Colors.xcassets */; };
 		CD0BEF4A25139B1B0058B0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEF0A25139B1A0058B0A6 /* Assets.xcassets */; };
 		CD0BEF4F25139B1B0058B0A6 /* IFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */; };
-		CD0BEF5025139B1B0058B0A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */; };
 		CD0BEF5125139B1B0058B0A6 /* StatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */; };
 		CD0BEF5325139B1B0058B0A6 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1725139B1A0058B0A6 /* AppConstants.swift */; };
 		CD0BEF5425139B1B0058B0A6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEF1825139B1A0058B0A6 /* Colors.swift */; };
@@ -107,7 +106,6 @@
 		CD0BEF0925139B1A0058B0A6 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Colors.xcassets; sourceTree = "<group>"; };
 		CD0BEF0A25139B1A0058B0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFrameViewController.swift; sourceTree = "<group>"; };
-		CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatePickerViewController.swift; sourceTree = "<group>"; };
 		CD0BEF1725139B1A0058B0A6 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		CD0BEF1825139B1A0058B0A6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				CD0BEF1125139B1A0058B0A6 /* IFrameViewController.swift */,
-				CD0BEF1225139B1A0058B0A6 /* MainViewController.swift */,
 				CD0BEF1325139B1A0058B0A6 /* Senegal */,
 				CD0BEF1425139B1A0058B0A6 /* StatePickerViewController.swift */,
 			);
@@ -633,7 +630,6 @@
 				CD0BEF6725139B1B0058B0A6 /* MTNCI.swift in Sources */,
 				CD0BEF7325139B1B0058B0A6 /* UITextFieldExtension.swift in Sources */,
 				CD0BEF6025139B1B0058B0A6 /* Senegal.swift in Sources */,
-				CD0BEF5025139B1B0058B0A6 /* MainViewController.swift in Sources */,
 				CD0BEF5125139B1B0058B0A6 /* StatePickerViewController.swift in Sources */,
 				CD0BEEE7251396DA0058B0A6 /* Maths.swift in Sources */,
 				CD99794B2513D3460000692C /* PayDunyaOrder.swift in Sources */,

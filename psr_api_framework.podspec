@@ -25,9 +25,15 @@ Pod::Spec.new do |s|
 
   s.source_files = 'psr_api_framework/**/*.{h,m,swift}'
   
-  s.resource_bundles = 'psr_api_framework/**/*.xib'
+  # s.resource_bundles = 'psr_api_framework/**/*.xib'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
    s.dependency 'Alamofire', '~> 4.8.2'
+   s.dependency 'SwiftyJSON'
+   s.dependency 'EzPopup'
+   s.dependency 'SKCountryPicker'
+   s.dependency 'MaterialComponents/TextControls+OutlinedTextAreas'
+   s.dependency 'MaterialComponents/TextControls+OutlinedTextFields'
+   s.dependency 'EasyTipView', '~> 2.0.4'
 end
