@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/mhdcamara/psr_api_framework'
 
-  # s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mhdcamara' => 'camara.mouhamed@paydunya.com' }
   s.source           = { :git => 'https://github.com/mhdcamara/psr_api_framework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
