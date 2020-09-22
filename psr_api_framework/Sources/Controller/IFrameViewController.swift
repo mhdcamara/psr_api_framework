@@ -71,6 +71,8 @@ public class IFrameViewController: UIViewController, EasyTipViewDelegate
     
     @IBOutlet weak var payWithLabel: UILabel!
     
+    
+    
     //MARK: Properties
     
 //    let SNVC = SenegalViewController.instantiate()

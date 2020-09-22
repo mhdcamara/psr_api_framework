@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'psr_api_framework'
   s.swift_version = "5.2.4"
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
 
   s.summary = "psr_api_framework vous permettant d'intégrer plus facile l'API PSR de PayDunya dans votre projet Swift"
   s.description = "Afin de permettre de facilité l'intégration de l'API PSR de PayDunya, Cette librairie est mise en place. Vous pouvez désormais utiliser cette API en faisant un simple import. "
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'psr_api_framework/**/*.{h,m,swift}'
   
-  s.resources = 'psr_api_framework/**/*.xib'
+  s.resources = 'psr_api_framework/**/*.{xib,storyboard}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
