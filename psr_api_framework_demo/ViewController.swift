@@ -21,14 +21,6 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .lightGray
-        
-        let maths = Maths(a: 5, b: 7)
-                
-        print("Add: \(maths.add())")
-        print("Add: \(maths.sub())")
-        
     }
     
     //MARK: Privates Function

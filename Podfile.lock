@@ -2,44 +2,96 @@ PODS:
   - Alamofire (4.8.2)
   - EasyTipView (2.0.4)
   - EzPopup (1.1)
-  - MaterialComponents/AnimationTiming (116.0.0)
-  - MaterialComponents/Availability (116.0.0)
-  - MaterialComponents/private/Math (116.0.0)
-  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (116.0.0)":
+  - MaterialComponents/AnimationTiming (116.0.1)
+  - MaterialComponents/Availability (116.0.1)
+  - MaterialComponents/Buttons (116.0.1):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (116.0.1):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (116.0.1):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (116.0.1)
+  - MaterialComponents/private/Application (116.0.1)
+  - MaterialComponents/private/Color (116.0.1):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (116.0.1)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (116.0.1)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (116.0.0)":
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (116.0.1)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+Shared (116.0.0)":
+  - "MaterialComponents/private/TextControlsPrivate+Shared (116.0.1)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Math
     - "MaterialComponents/TextControls+Enums"
-  - "MaterialComponents/private/TextControlsPrivate+TextFields (116.0.0)":
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (116.0.1)":
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/TextControls+BaseTextAreas (116.0.0)":
+  - MaterialComponents/Ripple (116.0.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (116.0.1)
+  - MaterialComponents/ShadowLayer (116.0.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (116.0.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (116.0.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - "MaterialComponents/TextControls+BaseTextAreas (116.0.1)":
     - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
     - "MaterialComponents/private/TextControlsPrivate+Shared"
     - MDFInternationalization
-  - "MaterialComponents/TextControls+BaseTextFields (116.0.0)":
+  - "MaterialComponents/TextControls+BaseTextFields (116.0.1)":
     - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
     - "MaterialComponents/private/TextControlsPrivate+Shared"
     - "MaterialComponents/private/TextControlsPrivate+TextFields"
     - MDFInternationalization
-  - "MaterialComponents/TextControls+Enums (116.0.0)"
-  - "MaterialComponents/TextControls+OutlinedTextAreas (116.0.0)":
+  - "MaterialComponents/TextControls+Enums (116.0.1)"
+  - "MaterialComponents/TextControls+OutlinedTextAreas (116.0.1)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields (116.0.0)":
+  - "MaterialComponents/TextControls+OutlinedTextFields (116.0.1)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
+  - MaterialComponents/TextFields (116.0.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (116.0.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - SKCountryPicker (1.2.9)
   - SwiftyJSON (5.0.0)
 
@@ -49,16 +101,18 @@ DEPENDENCIES:
   - EzPopup
   - "MaterialComponents/TextControls+OutlinedTextAreas"
   - "MaterialComponents/TextControls+OutlinedTextFields"
+  - MaterialComponents/TextFields
   - SKCountryPicker
   - SwiftyJSON
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - EasyTipView
     - EzPopup
     - MaterialComponents
     - MDFInternationalization
+    - MDFTextAccessibility
     - SKCountryPicker
     - SwiftyJSON
 
@@ -66,11 +120,12 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   EasyTipView: 4f8beae0a82db2ca4a9b5fd658785fc5f61d296b
   EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
-  MaterialComponents: a6cf920307c2864f71e37972620f24c4d14fae8d
+  MaterialComponents: a8759fa4dd253b6026648730ec0252c428dee589
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   SKCountryPicker: 7ad1e7dfb482cfb26855e33c2d70dbf1eaf218fe
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5f6ba9db1f69f205bc57bd0e53a10aea003008f0
+PODFILE CHECKSUM: ec5672ff4aac13d2775dc9ee7484d9e22ca8040e
 
 COCOAPODS: 1.9.3

@@ -9,14 +9,18 @@
 Pod::Spec.new do |s|
   s.name             = 'psr_api_framework'
   s.swift_version = "5.2.4"
-  s.version          = '1.0.2'
+  s.version          = '1.2.0'
 
   s.summary = "psr_api_framework vous permettant d'intégrer plus facile l'API PSR de PayDunya dans votre projet Swift"
   s.description = "Afin de permettre de facilité l'intégration de l'API PSR de PayDunya, Cette librairie est mise en place. Vous pouvez désormais utiliser cette API en faisant un simple import. "
 
   s.homepage         = 'https://github.com/mhdcamara/psr_api_framework'
 
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Copyright', :text => <<-LICENSE
+                            Copyright 2018
+                            Permission is granted to...
+                          LICENSE
+                        }
   s.author           = { 'mhdcamara' => 'camara.mouhamed@paydunya.com' }
   s.source           = { :git => 'https://github.com/mhdcamara/psr_api_framework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
@@ -25,8 +29,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'psr_api_framework/**/*.{h,m,swift}'
   
-  s.resources = 'psr_api_framework/**/*.{xib,storyboard}'
-
+  s.resources = 'psr_api_framework/**/*.xib'
+  # {xib,storyboard}
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
    s.dependency 'Alamofire', '~> 4.8.2'
@@ -36,4 +40,5 @@ Pod::Spec.new do |s|
    s.dependency 'MaterialComponents/TextControls+OutlinedTextAreas'
    s.dependency 'MaterialComponents/TextControls+OutlinedTextFields'
    s.dependency 'EasyTipView', '~> 2.0.4'
+   s.dependency 'MaterialComponents/TextFields'
 end

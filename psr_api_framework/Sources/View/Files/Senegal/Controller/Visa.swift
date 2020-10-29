@@ -20,16 +20,6 @@ import WebKit
 class Visa: UIView, WKNavigationDelegate, WKUIDelegate
 {
     //MARK: Outlets
-                
-//    @IBOutlet weak var fullNameLabel: UILabel!
-//
-//    @IBOutlet weak var emailLabel: UILabel!
-//
-//    @IBOutlet weak var amountLabel: UILabel!
-//
-//    @IBOutlet weak var telTextField: MDCOutlinedTextField!
-        
-//        @IBOutlet weak var codeTextField: MDCOutlinedTextField!
     
     lazy var webView: WKWebView = {
         let webConfiguration = WKWebViewConfiguration()
@@ -37,22 +27,14 @@ class Visa: UIView, WKNavigationDelegate, WKUIDelegate
         webView.uiDelegate = self
         webView.navigationDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
-//        webView.load(URLRequest(url: URL(string: AppConstant.payment_url)!))
         return webView
     }()
     
     //MARK: Actions
     
     
-//    @IBAction func payWithPayDunyaButton(_ sender: UIButton)
-//    {
-//        guard let delegate = delegate else { return }
-//        delegate.paymentWithVisa(tel: telTextField.text!)
-//    }
-    
     //MARK: Properties
 
-//    weak var delegate: VisaDelegate? = nil
     
     required init?(coder: NSCoder)
     {
@@ -62,7 +44,8 @@ class Visa: UIView, WKNavigationDelegate, WKUIDelegate
 
         webView.allowsBackForwardNavigationGestures = true
         
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0, *)
+        {
             NSLayoutConstraint.activate([
                 webView.topAnchor
                     .constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
@@ -79,6 +62,7 @@ class Visa: UIView, WKNavigationDelegate, WKUIDelegate
             // Fallback on earlier versions
         }
         
+        customActivityIndicatory(theIframe.view, startAnimate: true)
         webView.load(URLRequest(url: URL(string: AppConstant.payment_url)!))
 
     }
@@ -86,11 +70,13 @@ class Visa: UIView, WKNavigationDelegate, WKUIDelegate
     override init(frame: CGRect)
     {
         super.init(frame: frame)
+        
         self.addSubview(webView)
 
         webView.allowsBackForwardNavigationGestures = true
         
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0, *)
+        {
             NSLayoutConstraint.activate([
                 webView.topAnchor
                     .constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
@@ -107,6 +93,18 @@ class Visa: UIView, WKNavigationDelegate, WKUIDelegate
             // Fallback on earlier versions
         }
         webView.load(URLRequest(url: URL(string: AppConstant.payment_url)!))
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
+    {
+        print("finish to load")
+        
+
+        customActivityIndicatory(theIframe.view, startAnimate: false)
+        if let url = webView.url?.absoluteString
+        {
+            print("url = \(url)")
+        }
     }
     
 //    override func layoutSubviews()

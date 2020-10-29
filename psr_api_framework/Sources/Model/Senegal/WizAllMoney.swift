@@ -15,10 +15,6 @@ import SwiftyJSON
 
 extension Senegal: WizAllDelegate
 {
-//    func paymentWithWizAll(tel: String) {
-//
-//    }
-    
     func paymentWithWizAll(tel: String, phoneTextField: UITextField, codeTextField: UITextField, initBnt: UIButton, confirmedBnt: UIButton)
     {
         
@@ -47,6 +43,8 @@ extension Senegal: WizAllDelegate
     
     private func wizall_initiate(token: String, tel: String, phoneTextField: UITextField, codeTextField: UITextField, initBnt: UIButton, confirmedBnt: UIButton)
     {
+        customActivityIndicatory(theIframe.view, startAnimate: true)
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json"
         ]
@@ -78,8 +76,9 @@ extension Senegal: WizAllDelegate
                 
                     if message == "Vous n' avez pas assez de fonds! Veuillez recharger votre compte Wizall Money pour effectuer ce paiement"
                     {
-
-                        self.WizAll_Initiate_Error_Alert()
+                        customActivityIndicatory(theIframe.view, startAnimate: false)
+                        
+                        self.WizAll_Initiate_Error_Alert(message: message)
                     }
                     else if message == "Requête de paiement effectuée!"
                     {
@@ -87,19 +86,19 @@ extension Senegal: WizAllDelegate
                     }
                     else
                     {
-                        self.WizAll_Initiate_Error_Alert()
-//                        self.WizAll_Confirmed_Error_Alert()
+                        self.WizAll_Initiate_Error_Alert(message: message)
                     }
                 
                 case let .failure(error):
                     print("Ceci est votre erreur: \(error)")
             }
-         
         }
     }
     
     private func wizall_confirmation(code: String, tel: String)
     {
+        customActivityIndicatory(theIframe.view, startAnimate: true)
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
         ]
@@ -127,14 +126,17 @@ extension Senegal: WizAllDelegate
                 
                     if json["success"].boolValue
                     {
+                        customActivityIndicatory(theIframe.view, startAnimate: false)
                         self.WizAll_Confirmed_Success_Alert()
                     }
                     else
                     {
+                        customActivityIndicatory(theIframe.view, startAnimate: false)
                         self.WizAll_Confirmed_Error_Alert()
                     }
                 
                 case let .failure(error):
+                    customActivityIndicatory(theIframe.view, startAnimate: false)
                     print("Ceci est votre erreur: \(error)")
             }
          
@@ -169,28 +171,28 @@ extension Senegal
         UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
     }
     
+    
     public func WizAll_Confirmed_Success_Alert()
     {
-        let title = "Notification"
+        let title = "Merci"
         let message = "Votre paiement avec wizall effectuée avec succés."
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
             
-//            self.wizall_confirmation(code: code, tel: tel)
-            self.removeFromSuperview()
-
+            theIframe.deinitiate()
+            
             alert.dismiss(animated: true, completion: nil)
             
         }))
         
+        
         UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
     }
     
-    public func WizAll_Initiate_Error_Alert()
+    public func WizAll_Initiate_Error_Alert(message: String)
     {
         let title = "Alerte"
-        let message = "Une erreur est survenu veuillez réessayer!"
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "Réessayez", style: UIAlertAction.Style.default, handler: { (action) in
@@ -201,10 +203,15 @@ extension Senegal
         
         alert.addAction(UIAlertAction(title: "Quittez", style: UIAlertAction.Style.default, handler: { (action) in
             
-//            self.removeFromSuperview(s)
-            alert.dismiss(animated: true, completion: nil)
+            theIframe.deinitiate()
             
-
+//            DispatchQueue.main.async {
+//                theIframe.deinitiate()
+////                self.removeFromSuperview()
+//            }
+            
+            alert.dismiss(animated: true, completion: {
+            })
         }))
         
         UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -224,7 +231,13 @@ extension Senegal
         
         alert.addAction(UIAlertAction(title: "Quittez", style: UIAlertAction.Style.default, handler: { (action) in
             
-            self.cancelAlert()
+            theIframe.deinitiate()
+            
+//            DispatchQueue.main.async {
+//                theIframe.deinitiate()
+////                self.removeFromSuperview()
+//            }
+            
             alert.dismiss(animated: true, completion: nil)
             
 
@@ -241,7 +254,10 @@ extension Senegal
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "Oui", style: UIAlertAction.Style.default, handler: { (action) in
-            
+            DispatchQueue.main.async {
+                theIframe.deinitiate()
+//                self.removeFromSuperview()
+            }
             alert.dismiss(animated: true, completion: nil)
         }))
         
@@ -254,21 +270,23 @@ extension Senegal
 
     }
     
-    public func successAlert()
+    public func successAlert(message: String)
     {
         let title = "Notification"
-        let message = "Votre opération s'est éffectuée avec succés!"
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            
+            DispatchQueue.main.async {
+                theIframe.deinitiate()
+//                self.removeFromSuperview()
+            }
             
             alert.dismiss(animated: true, completion: nil)
             
         }))
         
-        UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
-        
-//        self.present(alert, animated: true, completion: nil)
+        UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)        
     }
     
 }

@@ -13,7 +13,7 @@ import UIKit
 
 class TextField: UITextField
 {
-    let padding = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 5)
+    let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
 
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
@@ -113,11 +113,11 @@ extension UITextField
     {
         let imageView = UIImageView(frame: CGRect(x: self.frame.size.width - 45, y: 10, width: 30, height: 30))
         imageView.image = image
-        imageView.tintColor = #colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1)
+        imageView.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         if isSecure
         {
             let button = UIButton(frame: imageView.frame)
-            button.tintColor = #colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1)
+            button.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
             if #available(iOS 13.0, *)
             {
                 let lock = UIImage(systemName: "lock.fill")

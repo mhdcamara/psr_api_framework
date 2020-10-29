@@ -31,7 +31,7 @@ public final class PayDunyaOrder
             "items": self.items,
             "taxes": self.taxes,
             "total_amount": self.total_amount,
-            "channels": ["card"],
+            "channels": ["card", "orange-money-ci"],
             "description": self.description
             ] as [String : Any]
     

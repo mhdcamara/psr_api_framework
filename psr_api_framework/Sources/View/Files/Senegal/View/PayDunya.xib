@@ -1,83 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayDunya" customModule="psr_api" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayDunya" customModule="psr_api_framework" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M42-kp-PnN">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-K0-0eO">
-                            <rect key="frame" x="34" y="155" width="251" height="146"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="xsl-c2-vS9">
-                                    <rect key="frame" x="0.0" y="0.0" width="251" height="79"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ou N° Téléphone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDQ-d6-2vC" customClass="MDCOutlinedTextField" customModule="psr_api" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="251" height="30"/>
-                                            <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="251" id="7T5-9n-BAG"/>
-                                                <constraint firstAttribute="height" constant="30" id="jUk-b0-xbO"/>
-                                            </constraints>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
-                                        </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-uh-FBq" customClass="MDCOutlinedTextField" customModule="psr_api" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="49" width="251" height="30"/>
-                                            <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="pWV-g5-BXt"/>
-                                                <constraint firstAttribute="width" constant="251" id="wem-TN-OZw"/>
-                                            </constraints>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="251" id="RZp-0U-tRV"/>
-                                        <constraint firstAttribute="height" constant="79" id="c3I-TQ-v93"/>
-                                    </constraints>
-                                </stackView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoZ-Nv-iEv">
-                                    <rect key="frame" x="0.0" y="114" width="251" height="32"/>
-                                    <color key="backgroundColor" red="0.0039215686269999999" green="0.43921568630000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="251" id="Csz-jz-XdZ"/>
-                                        <constraint firstAttribute="height" constant="32" id="QKf-0e-qBY"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                    <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <state key="normal" title="  PAYER MAINTENANT" image="checkmark.circle.fill" catalog="system"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="3"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="payWithPayDunyaButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="PHx-tA-whV"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="146" id="39g-zc-48H"/>
-                                <constraint firstAttribute="width" constant="251" id="dfS-50-nMI"/>
-                            </constraints>
-                        </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="agk-7B-G9t">
-                            <rect key="frame" x="38" y="372" width="245" height="22"/>
+                            <rect key="frame" x="38" y="370" width="245" height="22"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwZ-Qa-qYh">
                                     <rect key="frame" x="0.0" y="0.0" width="187" height="22"/>
@@ -103,7 +44,7 @@
                                     </attributedString>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOy-Is-lEQ">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOy-Is-lEQ">
                                     <rect key="frame" x="190" y="0.0" width="55" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="55" id="GBU-q7-wFy"/>
@@ -212,23 +153,74 @@
                                 <constraint firstAttribute="height" constant="99" id="BFb-k7-guV"/>
                             </constraints>
                         </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="OYQ-zp-43M">
+                            <rect key="frame" x="34" y="148" width="253" height="203"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ou N° Téléphone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTt-d5-i5k" customClass="MDCTextField">
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="40"/>
+                                    <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="YJM-WH-ABT"/>
+                                        <constraint firstAttribute="width" constant="253" id="wzB-Ji-v7E"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-RU-PV7" customClass="MDCTextField">
+                                    <rect key="frame" x="0.0" y="84" width="253" height="40"/>
+                                    <color key="tintColor" red="0.0" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="1KJ-gu-w9S"/>
+                                        <constraint firstAttribute="width" constant="253" id="WLV-qm-q0g"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e62-10-TnQ">
+                                    <rect key="frame" x="0.0" y="168" width="253" height="35"/>
+                                    <color key="backgroundColor" red="0.0039215686269999999" green="0.43921568630000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="253" id="2MA-lT-5RC"/>
+                                        <constraint firstAttribute="height" constant="35" id="NKf-5O-dN0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                    <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="  PAYER MAINTENANT" image="checkmark.circle.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="payWithPayDunyaButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="r87-tx-Fqs"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="253" id="6Y7-Fy-72Y"/>
+                                <constraint firstAttribute="height" constant="203" id="Aer-LG-3Iq"/>
+                            </constraints>
+                        </stackView>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="ITY-il-hlj" secondAttribute="trailing" constant="33" id="6zC-m3-Yy8"/>
                         <constraint firstItem="ITY-il-hlj" firstAttribute="leading" secondItem="M42-kp-PnN" secondAttribute="leading" constant="34" id="Ben-lN-OiG"/>
-                        <constraint firstAttribute="bottom" secondItem="agk-7B-G9t" secondAttribute="bottom" constant="6" id="Cao-Yd-eUZ"/>
-                        <constraint firstItem="agk-7B-G9t" firstAttribute="top" relation="lessThanOrEqual" secondItem="xxK-K0-0eO" secondAttribute="bottom" constant="71" id="Czl-Qe-9Ec"/>
-                        <constraint firstItem="xxK-K0-0eO" firstAttribute="leading" secondItem="M42-kp-PnN" secondAttribute="leading" constant="34" id="EOU-z2-Ydu"/>
+                        <constraint firstAttribute="bottom" secondItem="agk-7B-G9t" secondAttribute="bottom" constant="8" id="Cao-Yd-eUZ"/>
+                        <constraint firstItem="OYQ-zp-43M" firstAttribute="top" secondItem="ITY-il-hlj" secondAttribute="bottom" constant="24" id="HtJ-jQ-F1y"/>
+                        <constraint firstItem="OYQ-zp-43M" firstAttribute="leading" secondItem="M42-kp-PnN" secondAttribute="leading" constant="34" id="Iz0-vP-ueP"/>
                         <constraint firstItem="agk-7B-G9t" firstAttribute="leading" secondItem="M42-kp-PnN" secondAttribute="leading" constant="38" id="Jks-ja-seN"/>
-                        <constraint firstAttribute="trailing" secondItem="xxK-K0-0eO" secondAttribute="trailing" constant="35" id="OfH-dc-eHD"/>
+                        <constraint firstItem="agk-7B-G9t" firstAttribute="top" secondItem="OYQ-zp-43M" secondAttribute="bottom" constant="19" id="ZrC-DA-yyC"/>
                         <constraint firstAttribute="height" constant="400" id="a9H-Zg-LVZ"/>
                         <constraint firstAttribute="trailing" secondItem="agk-7B-G9t" secondAttribute="trailing" constant="37" id="nWp-GD-n7z"/>
-                        <constraint firstItem="xxK-K0-0eO" firstAttribute="top" secondItem="ITY-il-hlj" secondAttribute="bottom" constant="31" id="puX-q8-2Nv"/>
+                        <constraint firstAttribute="trailing" secondItem="OYQ-zp-43M" secondAttribute="trailing" constant="33" id="qHC-e9-Me2"/>
                         <constraint firstItem="ITY-il-hlj" firstAttribute="top" secondItem="M42-kp-PnN" secondAttribute="top" constant="25" id="qUa-5k-BIJ"/>
                         <constraint firstAttribute="width" constant="320" id="tpk-sJ-m6f"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="M42-kp-PnN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="997-Qd-fxt"/>
@@ -237,10 +229,9 @@
                 <constraint firstItem="M42-kp-PnN" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="kB3-al-2fr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="codeTextField" destination="HXD-uh-FBq" id="N9i-e6-Cxb"/>
-                <outlet property="telTextField" destination="rDQ-d6-2vC" id="MeU-vV-l5p"/>
+                <outlet property="codeTextField" destination="rLq-RU-PV7" id="u0R-wF-pHy"/>
+                <outlet property="telTextField" destination="uTt-d5-i5k" id="hCQ-Qh-MGd"/>
             </connections>
             <point key="canvasLocation" x="-67.5" y="60.2112676056338"/>
         </view>

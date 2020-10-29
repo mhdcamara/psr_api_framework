@@ -26,11 +26,9 @@ class OrangeMoney: UIView
     
     @IBOutlet weak var amountLabel: UILabel!
     
-    @IBOutlet weak var telTextField: MDCOutlinedTextField!
+    @IBOutlet weak var telTextField: MDCTextField!
     
-    
-    @IBOutlet weak var codeTextField: MDCOutlinedTextField!
-    
+    @IBOutlet weak var codeTextField: MDCTextField!
     
     //MARK: Actions
     
@@ -44,6 +42,9 @@ class OrangeMoney: UIView
     //MARK: Properties
     
     weak var delegate: OMoneyDelegate? = nil
+    
+    var controller1: MDCTextInputControllerOutlined?
+    var controller2: MDCTextInputControllerOutlined?
     
     required init?(coder: NSCoder)
     {
@@ -59,90 +60,53 @@ class OrangeMoney: UIView
     {
         super.layoutSubviews()
         
-        telTextField.layer.borderColor = UIColor.blue.cgColor
-        telTextField.layer.borderWidth = 0.5
-        telTextField.layer.cornerRadius = 3
+        initializeHideKeyboard()
+        
+        telTextField.placeholderLabel.textColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        telTextField.placeholderLabel.text = "N° de téléphone"
+        controller1 = MDCTextInputControllerOutlined(textInput: telTextField)
+        controller1!.activeColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        controller1!.disabledColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        
+        codeTextField.placeholderLabel.textColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        codeTextField.placeholderLabel.text = "Mot de passe"
+        controller2 = MDCTextInputControllerOutlined(textInput: codeTextField)
+        controller2!.activeColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        controller2!.disabledColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        controller2!.textInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+        controller1!.textInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         
         
-        codeTextField.layer.borderColor = UIColor.blue.cgColor
-        codeTextField.layer.borderWidth = 0.5
-        codeTextField.layer.cornerRadius = 3
-        
-//        telTextField.label.
-//        telTextField.label.text = "Email ou N° de téléphone"
-//        telTextField.label.textColor = .red
-        
-//        telTextField.leadingAssistiveLabel.text = "Email ou N° de téléphone"
-//        telTextField.setOutlineColor(.systemGray6, for: .normal)
-//        telTextField.setOutlineColor(#colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1), for: .editing)
+        telTextField.clearButton.isHidden = true
+        codeTextField.clearButton.isHidden = true
         
         if #available(iOS 13.0, *)
         {
-            telTextField.addRightView(image: UIImage(systemName: "person.fill")!)
-        }
-        else
-        {
-            // Fallback on earlier versions
-        }
-        
-        telTextField.sizeToFit()
-        
-//        codeTextField.label.text = "Mot de passe"
-//        codeTextField.label.textColor = .red
-//
-//        codeTextField.leadingAssistiveLabel.text = ""
-//        codeTextField.setOutlineColor(.systemGray6, for: .normal)
-//        codeTextField.setOutlineColor(#colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1), for: .editing)
-//
-        if #available(iOS 13.0, *)
-        {
+            telTextField.addRightView(image: UIImage(systemName: "phone.fill")!)
+            
             codeTextField.addRightView(image: UIImage(systemName: "lock.fill")!)
+
         }
         else
         {
             // Fallback on earlier versions
         }
-
-        
-        codeTextField.sizeToFit()
-//        telTextField.layer.borderWidth = 0.8
-//        telTextField.layer.borderColor = UIColor.systemGray4.cgColor
-//        telTextField.layer.cornerRadius = 5
-//
-//        codeTextField.layer.borderWidth = 0.8
-//        codeTextField.layer.borderColor = UIColor.systemGray4.cgColor
-//        codeTextField.layer.cornerRadius = 5
-//        setup()
     }
-    
+}
 
-//    //MARK: Private Functions
-//    private func setup()
-//    {
-//        telTextField.label.text = "Email ou N° de téléphone"
-//        telTextField.label.textColor = .red
-//        
-//        telTextField.leadingAssistiveLabel.text = ""
-//        telTextField.setOutlineColor(.systemGray6, for: .normal)
-//        telTextField.setOutlineColor(#colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1), for: .editing)
-//        
-//        telTextField.addRightView(image: UIImage(systemName: "person.fill")!)
-//        
-//        telTextField.sizeToFit()
-//        
-//        codeTextField.label.text = "Mot de passe"
-//        codeTextField.label.textColor = .red
-//        
-//        codeTextField.leadingAssistiveLabel.text = ""
-//        codeTextField.setOutlineColor(.systemGray6, for: .normal)
-//        codeTextField.setOutlineColor(#colorLiteral(red: 0, green: 0.5728718638, blue: 1, alpha: 1), for: .editing)
-//        
-//        codeTextField.addRightView(image: UIImage(systemName: "lock.fill")!)
-//
-//        
-//        codeTextField.sizeToFit()
-//        
-//    }
-    
-    
+extension OrangeMoney
+{
+    func initializeHideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+        target: self,
+        action: #selector(dismissMyKeyboard))
+
+        self.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissMyKeyboard()
+    {
+        self.endEditing(true)
+    }
 }

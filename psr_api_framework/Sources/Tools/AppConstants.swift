@@ -12,5 +12,7 @@ import Foundation
 public class AppConstant
 {
     static var invoice_token = ""
-    static var payment_url = ""
+    static var fullname = "El Hadji Doro Gueye"
+    static var email = "doro.gueye@paydunya.com"
+    static var payment_url = "www.paydunya.com"
 }

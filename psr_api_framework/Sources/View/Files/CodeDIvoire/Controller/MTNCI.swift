@@ -26,7 +26,7 @@ class MTNCI: UIView
     
     @IBOutlet weak var amountLabel: UILabel!
     
-    @IBOutlet weak var telTextField: MDCOutlinedTextField!
+    @IBOutlet weak var telTextField: MDCTextField!
     
     
     //MARK: Actions
@@ -42,6 +42,9 @@ class MTNCI: UIView
 
     weak var delegate: MTNCIDelegate? = nil
     
+    var controller1: MDCTextInputControllerOutlined?
+
+    
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
@@ -56,9 +59,14 @@ class MTNCI: UIView
     {
         super.layoutSubviews()
         
-        telTextField.layer.borderColor = UIColor.blue.cgColor
-        telTextField.layer.borderWidth = 0.5
-        telTextField.layer.cornerRadius = 3
+        initializeHideKeyboard()
+        
+        telTextField.placeholderLabel.textColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        telTextField.placeholderLabel.text = "N° de téléphone"
+        controller1 = MDCTextInputControllerOutlined(textInput: telTextField)
+        controller1!.activeColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        controller1!.disabledColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        controller1!.textInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         
         if #available(iOS 13.0, *)
         {
@@ -68,7 +76,23 @@ class MTNCI: UIView
         {
             // Fallback on earlier versions
         }
-        
-        telTextField.sizeToFit()
+    }
+}
+
+
+extension MTNCI
+{
+    func initializeHideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+        target: self,
+        action: #selector(dismissMyKeyboard))
+
+        self.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissMyKeyboard()
+    {
+        self.endEditing(true)
     }
 }

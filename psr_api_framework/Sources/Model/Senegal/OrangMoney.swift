@@ -30,6 +30,8 @@ extension Senegal: OMoneyDelegate
     
     private func OMoneyRequest(tel: String, code: String, token: String)
     {
+        customActivityIndicatory(theIframe.view, startAnimate: true)
+
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
         ]
@@ -58,16 +60,23 @@ extension Senegal: OMoneyDelegate
                     
                     if json["success"].boolValue
                     {
-                        self.successAlert()
+                        let message = json["message"].stringValue
+                        customActivityIndicatory(theIframe.view, startAnimate: false)
+                        self.successAlert(message: message)
                     }
                     else
                     {
 //                        self.cancelAlert()
+                        customActivityIndicatory(theIframe.view, startAnimate: false)
+
                         self.WizAll_Confirmed_Error_Alert()
                     }
                     print("Voici la réponse pour PayDunya: \(json)")
                 
-                case let .failure(error): print(error)
+                case let .failure(error):
+                    customActivityIndicatory(theIframe.view, startAnimate: false)
+
+                    print(error)
             }
          
         }
