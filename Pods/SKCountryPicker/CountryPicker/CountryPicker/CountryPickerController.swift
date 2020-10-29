@@ -91,7 +91,7 @@ open class CountryPickerController: UIViewController {
     // MARK: - View life cycle
     fileprivate func setUpsSearchController() {
         searchController.hidesNavigationBarDuringPresentation = true
-        searchController.dimsBackgroundDuringPresentation = false
+//        searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.barStyle = .default
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self

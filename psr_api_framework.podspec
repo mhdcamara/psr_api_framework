@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'psr_api_framework/**/*.{h,m,swift}'
   
-  s.resources = 'psr_api_framework/**/*.xib'
-  # {xib,storyboard}
+  s.resources = 'psr_api_framework/**/*.{xib,storyboard}'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
    s.dependency 'Alamofire', '~> 4.8.2'

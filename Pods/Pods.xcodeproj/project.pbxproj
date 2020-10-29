@@ -1220,7 +1220,7 @@
 		5C9007452B6FB60C979ADF1BC0886474 /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
 		5D44ECFDA3B2610A6E53C58D99D3113F /* MP.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = MP.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/MP.png; sourceTree = "<group>"; };
 		5D4D36E72637209E1F783812A3C0A7D7 /* EzPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EzPopup-umbrella.h"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF49F791302F993E4FE78D29361630F /* TD.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = TD.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/TD.png; sourceTree = "<group>"; };
 		5DF4DED09311792EE5EEF2222220D3C5 /* KH.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = KH.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/KH.png; sourceTree = "<group>"; };
 		5EF71984B71A82D34C6BABBC68B2DB7E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
@@ -1304,7 +1304,7 @@
 		7D375B5BC580B5874C3EAE52229C3AB6 /* GN@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "GN@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/GN@2x.png"; sourceTree = "<group>"; };
 		7D5505E147F0DC34C1A9AF7711E34408 /* MDCFloatingButton+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCFloatingButton+Animation.h"; path = "components/Buttons/src/MDCFloatingButton+Animation.h"; sourceTree = "<group>"; };
 		7DAB722856D0A7D59590A313BD79D8FB /* MDCPaletteExpansions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPaletteExpansions.h; path = components/Palettes/src/private/MDCPaletteExpansions.h; sourceTree = "<group>"; };
-		7E04694284ECE7F371A4DB86CDE04DD9 /* EzPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EzPopup.framework; path = EzPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E04694284ECE7F371A4DB86CDE04DD9 /* EzPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EzPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED0149D1B9DB286747F1386FC171AA2 /* UIFont+MaterialScalable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+MaterialScalable.h"; path = "components/Typography/src/UIFont+MaterialScalable.h"; sourceTree = "<group>"; };
 		7EFA552D61ED7CD94D24412E6375378B /* MDFColorCalculations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDFColorCalculations.m; path = src/private/MDFColorCalculations.m; sourceTree = "<group>"; };
 		7F2EF641A2E4304A3EED983DA5689208 /* MD@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "MD@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/MD@2x.png"; sourceTree = "<group>"; };
@@ -1340,7 +1340,7 @@
 		8908769FD5A426A8F2F4F95FC9158867 /* BH@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "BH@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/BH@2x.png"; sourceTree = "<group>"; };
 		8A33389D87D18946807F0BF912AE82B0 /* TR@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "TR@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/TR@2x.png"; sourceTree = "<group>"; };
 		8A4FFEB3CE99C4F116AB4ACAC720B9B1 /* GL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = GL.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/GL.png; sourceTree = "<group>"; };
-		8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyTipView.framework; path = EasyTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B472E250895EBDE93824F9150255424 /* MDFRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDFRTL.m; path = Sources/MDFRTL.m; sourceTree = "<group>"; };
 		8B554E1A5991FB1E84006E47B9D0C937 /* BT.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = BT.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/BT.png; sourceTree = "<group>"; };
 		8B661FCBF48699B116046E196015FC11 /* EasyTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTipView-dummy.m"; sourceTree = "<group>"; };
@@ -1394,7 +1394,7 @@
 		99AD353BAACCC045D9BA75FEB498DC9A /* MDCTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextField.m; path = components/TextFields/src/MDCTextField.m; sourceTree = "<group>"; };
 		99B980FC81368B73747CF11CD320AD4E /* BI.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = BI.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/BI.png; sourceTree = "<group>"; };
 		99D55B449AED85C1015B88C478136046 /* MDFInternationalization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDFInternationalization.release.xcconfig; sourceTree = "<group>"; };
-		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization.framework; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A618514DCF78CB1CA2838D239956346 /* MT@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "MT@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/MT@2x.png"; sourceTree = "<group>"; };
 		9A732971A2F471DF73FE9E504654AD8C /* MDCPillShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPillShapeGenerator.h; path = components/ShapeLibrary/src/MDCPillShapeGenerator.h; sourceTree = "<group>"; };
 		9A7DB06907B156AAD6A78EA650091372 /* MDCTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextField.h; path = components/TextFields/src/MDCTextField.h; sourceTree = "<group>"; };
@@ -1409,7 +1409,7 @@
 		9C8ADCF5BCEF7F8117CE9325975DEBB7 /* JE@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "JE@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/JE@2x.png"; sourceTree = "<group>"; };
 		9CB50AC7BE5D59DAABE70FF8C292647F /* UG@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UG@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/UG@2x.png"; sourceTree = "<group>"; };
 		9D82F5C62D7937BAB7D8CE46D83E5420 /* MDCTextInputControllerLegacyFullWidth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextInputControllerLegacyFullWidth.m; path = components/TextFields/src/MDCTextInputControllerLegacyFullWidth.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D9AF0F4142A8248F10FC9973F522781 /* FK@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "FK@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/FK@2x.png"; sourceTree = "<group>"; };
 		9DEEF964B491B3A02B9C11240F1BF382 /* UIColor+MaterialElevation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialElevation.h"; path = "components/Elevation/src/UIColor+MaterialElevation.h"; sourceTree = "<group>"; };
 		9E5403503A8088F9F03AD32D95B5F12B /* EzPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EzPopup-dummy.m"; sourceTree = "<group>"; };
@@ -1424,7 +1424,7 @@
 		A211C93C06D249D6BA82BBFA6C2F0421 /* MDCFloatingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFloatingButton.h; path = components/Buttons/src/MDCFloatingButton.h; sourceTree = "<group>"; };
 		A2DA5D1920701EBB7BFE9D53A502968B /* GU.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = GU.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/GU.png; sourceTree = "<group>"; };
 		A3130AD1A3C91A6736F8CB66D2B58686 /* IQ@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "IQ@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/IQ@2x.png"; sourceTree = "<group>"; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A9D1B35C4E48E16F3E07E9E8C1BB3B /* AF@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "AF@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/AF@2x.png"; sourceTree = "<group>"; };
 		A3C1A8D7637BF1C40B007E1D021B67A9 /* AF.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = AF.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/AF.png; sourceTree = "<group>"; };
 		A3F4BCF902D2A3A13E285BD9903C23C2 /* CO.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CO.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/CO.png; sourceTree = "<group>"; };
@@ -1581,7 +1581,7 @@
 		D11E582E7B5B663CFFAC3596210DA806 /* DE.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = DE.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/DE.png; sourceTree = "<group>"; };
 		D172333187A0B299F8BEE55C5222EB7E /* AM.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = AM.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/AM.png; sourceTree = "<group>"; };
 		D1D0D5CF370291DA425AC432DDA9A625 /* IS.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = IS.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/IS.png; sourceTree = "<group>"; };
-		D240FBD26E7E12E63AA19F7266EB18FD /* Pods_psr_api_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_psr_api_framework.framework; path = "Pods-psr_api_framework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D240FBD26E7E12E63AA19F7266EB18FD /* Pods_psr_api_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C0E5B501FCC4B0CFFCFE5B8896C5B2 /* MDCMultilineTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCMultilineTextField.m; path = components/TextFields/src/MDCMultilineTextField.m; sourceTree = "<group>"; };
 		D2C4A0C6A07F4A2F356535CEC6AAEBDF /* MDCStatefulRippleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCStatefulRippleView.h; path = components/Ripple/src/MDCStatefulRippleView.h; sourceTree = "<group>"; };
 		D2DF6268E52DDBAEAF6B3C796B3DE500 /* MDCTextInputController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextInputController.h; path = components/TextFields/src/MDCTextInputController.h; sourceTree = "<group>"; };
@@ -1629,7 +1629,7 @@
 		DD86CE9A2D2E3F84A519F8D5EA1E15BC /* NR.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NR.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/NR.png; sourceTree = "<group>"; };
 		DDC5CA9696477C7653F213DEE5D579BD /* BR@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "BR@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/BR@2x.png"; sourceTree = "<group>"; };
 		DE08E3B744D65661291CF666BB97AE2A /* KI@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "KI@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/KI@2x.png"; sourceTree = "<group>"; };
-		DE277629B5C09BE727E2EA152C0F7D19 /* CountryPickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPickerController.bundle; path = "SKCountryPicker-CountryPickerController.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE277629B5C09BE727E2EA152C0F7D19 /* CountryPickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryPickerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE75926ADCE600EAC0D23A08159A9E45 /* MaterialShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowLayer.h; path = components/ShadowLayer/src/MaterialShadowLayer.h; sourceTree = "<group>"; };
 		DED8C14AEFF79FE409673DB75E24B2DD /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		DED9D7CBB7C7C380ABE373E179230756 /* TL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = TL.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/TL.png; sourceTree = "<group>"; };
@@ -1642,10 +1642,10 @@
 		E0EAB382EFECD0EA8C6FB10444CE7783 /* UIColor+MaterialBlending.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialBlending.m"; path = "components/private/Color/src/UIColor+MaterialBlending.m"; sourceTree = "<group>"; };
 		E17E40F3C532E9819E04CB84E2D36BD8 /* PR@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PR@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/PR@2x.png"; sourceTree = "<group>"; };
 		E1BB26BD8BFC10FA127601E45D5F4677 /* VE@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VE@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/VE@2x.png"; sourceTree = "<group>"; };
-		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E35D40CE0FDD4C4651AABDFD4367BC74 /* SKCountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SKCountryPicker.framework; path = SKCountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35D40CE0FDD4C4651AABDFD4367BC74 /* SKCountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKCountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E364E5396159A86F97F383D7EFFCF858 /* GI.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = GI.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/GI.png; sourceTree = "<group>"; };
-		E38414E534B26969EE74FDA6E34BD54A /* Pods_psr_api_framework_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_psr_api_framework_demo.framework; path = "Pods-psr_api_framework_demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38414E534B26969EE74FDA6E34BD54A /* Pods_psr_api_framework_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_framework_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A1003FE73D9974A157E0D6B1D97294 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E3FEAAB77E1E66FF86058B39F0658AA5 /* MDCShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShadowLayer.h; path = components/ShadowLayer/src/MDCShadowLayer.h; sourceTree = "<group>"; };
 		E43BF1AA8CE33174D1C942AB94ABA60A /* VA@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VA@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/VA@2x.png"; sourceTree = "<group>"; };
@@ -1723,7 +1723,7 @@
 		FAA8EAB623D41AFB8CDB0D7ABC1B2F40 /* Pods-psr_api_framework_demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-psr_api_framework_demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FAAE4C691621C722CDD85A6D4C0CA1EF /* NSString+MaterialBidi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MaterialBidi.m"; path = "Sources/NSString+MaterialBidi.m"; sourceTree = "<group>"; };
 		FB0ED6B6160F9E8B7B3FBEF7052FD220 /* PG.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = PG.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/PG.png; sourceTree = "<group>"; };
-		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFTextAccessibility.framework; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFC3DB75C96985957DC116625699CC4 /* MC.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = MC.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/MC.png; sourceTree = "<group>"; };
 		FD0818F673C788AE01FBA94ADDB2580B /* FI@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "FI@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/FI@2x.png"; sourceTree = "<group>"; };
 		FD2D8FC678E0B942CDD8ED909A27AC82 /* TM.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = TM.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/TM.png; sourceTree = "<group>"; };
@@ -1867,7 +1867,6 @@
 				0878BA06B90D9DB8C12822FAC52A63AE /* NSArray+MDFUtils.m */,
 				91BAD7BDD8DCF2C8D0E44C1E0410D102 /* Support Files */,
 			);
-			name = MDFTextAccessibility;
 			path = MDFTextAccessibility;
 			sourceTree = "<group>";
 		};
@@ -1893,7 +1892,6 @@
 				E62D709D6D8F5A36C9A5D5424FFE308C /* Validation.swift */,
 				8C6061A2CB49A2AF79CD670456B4643A /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -2032,7 +2030,6 @@
 				4AAB0A798B860FFD044C6B0EBCEB7531 /* UIView+MaterialRTL.m */,
 				63FE85E96BE362D6275C853A45F8965E /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -2042,7 +2039,6 @@
 				85A7772583F2981CE7C7C44CEB488415 /* SwiftyJSON.swift */,
 				F31838EDA9F9AFA7F920C89B05B7CAB2 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -2053,7 +2049,6 @@
 				50DB273EB5BB13296DAB3D706F1B2F09 /* UIKitExtensions.swift */,
 				847B68A93EFA48A51A452F84DEDC5AD7 /* Support Files */,
 			);
-			name = EasyTipView;
 			path = EasyTipView;
 			sourceTree = "<group>";
 		};
@@ -2075,7 +2070,6 @@
 				47BADD9FA33D02A91F94303F03C4E4E0 /* PopupViewController.swift */,
 				4A657BF694CBABC8028DB156A0B11FC6 /* Support Files */,
 			);
-			name = EzPopup;
 			path = EzPopup;
 			sourceTree = "<group>";
 		};
@@ -2743,7 +2737,6 @@
 				6A1C8C2B9AE7230D4B71288A92CD53BD /* Resources */,
 				FA28FF297D97819DEB9F602E45912E10 /* Support Files */,
 			);
-			name = SKCountryPicker;
 			path = SKCountryPicker;
 			sourceTree = "<group>";
 		};
@@ -2766,7 +2759,6 @@
 				9E2433BA1F7F481F0800D3F0FB3E4536 /* TextFields */,
 				1FC30ABE9707AF55E5661B408227E0EE /* Typography */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -3429,7 +3421,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -4370,7 +4362,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4405,7 +4397,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4451,6 +4443,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -4545,7 +4538,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4580,7 +4573,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzPopup/EzPopup-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzPopup/EzPopup-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4615,7 +4608,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4690,7 +4683,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4727,7 +4720,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4801,7 +4794,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4838,7 +4831,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SKCountryPicker/SKCountryPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SKCountryPicker/SKCountryPicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4911,7 +4904,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4938,7 +4931,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SKCountryPicker";
 				IBSC_MODULE = SKCountryPicker;
 				INFOPLIST_FILE = "Target Support Files/SKCountryPicker/ResourceBundle-CountryPickerController-SKCountryPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = CountryPickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -4963,7 +4956,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EzPopup/EzPopup-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EzPopup/EzPopup-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4991,7 +4984,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SKCountryPicker";
 				IBSC_MODULE = SKCountryPicker;
 				INFOPLIST_FILE = "Target Support Files/SKCountryPicker/ResourceBundle-CountryPickerController-SKCountryPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = CountryPickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -5017,7 +5010,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SKCountryPicker/SKCountryPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SKCountryPicker/SKCountryPicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5053,7 +5046,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5098,6 +5091,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -5148,7 +5142,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5184,7 +5178,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5219,7 +5213,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
