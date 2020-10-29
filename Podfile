@@ -12,7 +12,6 @@ target 'psr_api_framework' do
   pod 'Alamofire', '~> 4.8.2'
   pod 'SwiftyJSON'
   pod 'EzPopup'
-  
   pod 'MaterialComponents/TextFields'
   pod 'SKCountryPicker'
   pod 'EasyTipView', '~> 2.0.4'
