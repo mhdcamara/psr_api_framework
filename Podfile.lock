@@ -29,22 +29,6 @@ PODS:
   - MaterialComponents/private/Color (116.0.1):
     - MaterialComponents/Availability
   - MaterialComponents/private/Math (116.0.1)
-  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (116.0.1)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (116.0.1)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+Shared (116.0.1)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/TextControls+Enums"
-  - "MaterialComponents/private/TextControlsPrivate+TextFields (116.0.1)":
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
   - MaterialComponents/Ripple (116.0.1):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
@@ -60,24 +44,6 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - "MaterialComponents/TextControls+BaseTextAreas (116.0.1)":
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-    - MDFInternationalization
-  - "MaterialComponents/TextControls+BaseTextFields (116.0.1)":
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-    - "MaterialComponents/private/TextControlsPrivate+TextFields"
-    - MDFInternationalization
-  - "MaterialComponents/TextControls+Enums (116.0.1)"
-  - "MaterialComponents/TextControls+OutlinedTextAreas (116.0.1)":
-    - MaterialComponents/Availability
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
-    - "MaterialComponents/TextControls+BaseTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields (116.0.1)":
-    - MaterialComponents/Availability
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
-    - "MaterialComponents/TextControls+BaseTextFields"
   - MaterialComponents/TextFields (116.0.1):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
@@ -99,8 +65,6 @@ DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - EasyTipView (~> 2.0.4)
   - EzPopup
-  - "MaterialComponents/TextControls+OutlinedTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields"
   - MaterialComponents/TextFields
   - SKCountryPicker
   - SwiftyJSON
@@ -126,6 +90,6 @@ SPEC CHECKSUMS:
   SKCountryPicker: 7ad1e7dfb482cfb26855e33c2d70dbf1eaf218fe
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ec5672ff4aac13d2775dc9ee7484d9e22ca8040e
+PODFILE CHECKSUM: 42853d3a6c5e7b754736c08271ebcbbfee331719
 
 COCOAPODS: 1.9.3

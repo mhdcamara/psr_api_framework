@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
+
 # Uncomment the next line to define a global platform for your project
  platform :ios, '12.0'
 
@@ -12,15 +15,8 @@ target 'psr_api_framework' do
   pod 'EzPopup'
   
   pod 'MaterialComponents/TextFields'
-
-  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
-  pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'SKCountryPicker'
   pod 'EasyTipView', '~> 2.0.4'
-
-  source 'https://github.com/CocoaPods/Specs.git'
-  source 'https://cdn.cocoapods.org/'
-
 
 end
 

@@ -37,8 +37,6 @@ Pod::Spec.new do |s|
    s.dependency 'SwiftyJSON'
    s.dependency 'EzPopup'
    s.dependency 'SKCountryPicker'
-   s.dependency 'MaterialComponents/TextControls+OutlinedTextAreas'
-   s.dependency 'MaterialComponents/TextControls+OutlinedTextFields'
    s.dependency 'EasyTipView', '~> 2.0.4'
    s.dependency 'MaterialComponents/TextFields'
 end

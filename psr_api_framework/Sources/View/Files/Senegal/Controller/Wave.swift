@@ -8,8 +8,7 @@
 
 
 import UIKit
-import MaterialComponents.MaterialTextControls_OutlinedTextAreas
-import MaterialComponents.MaterialTextControls_OutlinedTextFields
+import MaterialComponents.MaterialTextFields
 
 
 protocol WaveDelegate: class
